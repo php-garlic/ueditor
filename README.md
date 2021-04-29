@@ -5,7 +5,7 @@
 
 
 ## 安装
-    composer require garlic/ueditor
+    composer require php-garlic/ueditor
     
     php artisan vendor:publish
     

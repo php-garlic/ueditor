@@ -7,7 +7,7 @@
 ## 安装
     composer require php-garlic/ueditor
     
-    php artisan vendor:publish
+    php artisan vendor:publish --provider="PhpGarlic\UEditor\UeditorServiceProvider"
     
     ueditor文件上传相关配置在 `config/ueditor.php`
 

@@ -15,8 +15,8 @@ use Illuminate\Support\Str;
 class UEditor extends Field
 {
     protected static $js = [
-        '@extension/garlic/ueditor/ueditor.config.js',
-        '@extension/garlic/ueditor/ueditor.all.min.js',
+        '@extension/php-garlic/ueditor/ueditor.config.js',
+        '@extension/php-garlic/ueditor/ueditor.all.min.js',
     ];
 
     protected $options = [
@@ -127,7 +127,7 @@ JS;
     public function variables()
     {
         return array_merge(parent::variables(), [
-            'homeUrl' => admin_asset('@extension/garlic/ueditor').'/',
+            'homeUrl' => admin_asset('@extension/php-garlic/ueditor').'/',
         ]);
     }
 

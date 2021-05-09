@@ -905,7 +905,7 @@ UE.parse.register('list',function(utils){
 
 
     utils.extend(this,{
-        liiconpath : 'https://bs.baidu.com/listicon/',
+        liiconpath : 'http://bs.baidu.com/listicon/',
         listDefaultPaddingLeft : '20'
     });
 

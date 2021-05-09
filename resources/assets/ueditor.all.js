@@ -14973,7 +14973,7 @@ UE.plugins['list'] = function () {
             'dot':''
         },
         listDefaultPaddingLeft : '30',
-        listiconpath : 'https://bs.baidu.com/listicon/',
+        listiconpath : 'http://bs.baidu.com/listicon/',
         maxListLevel : -1,//-1不限制
         disablePInList:false
     } );
@@ -17279,7 +17279,7 @@ UE.plugin.register('autolink',function(){
                             a.appendChild(range.extractContents());
                             a.href = a.innerHTML = a.innerHTML.replace(/<[^>]+>/g,'');
                             href = a.getAttribute("href").replace(new RegExp(domUtils.fillChar,'g'),'');
-                            href = /^(?:https?:\/\/)/ig.test(href) ? href : "https://"+ href;
+                            href = /^(?:https?:\/\/)/ig.test(href) ? href : "http://"+ href;
                             a.setAttribute('_src',utils.html(href));
                             a.href = utils.html(href);
 
@@ -17657,7 +17657,7 @@ UE.plugins['video'] = function (){
                     ' src="' + me.options.UEDITOR_HOME_URL+'themes/default/images/spacer.gif" style="background:url('+me.options.UEDITOR_HOME_URL+'themes/default/images/videologo.gif) no-repeat center center; border:1px solid gray;'+(align ? 'float:' + align + ';': '')+'" />'
                 break;
             case 'embed':
-                str = '<embed type="application/x-shockwave-flash" class="' + classname + '" pluginspage="https://www.macromedia.com/go/getflashplayer"' +
+                str = '<embed type="application/x-shockwave-flash" class="' + classname + '" pluginspage="http://www.macromedia.com/go/getflashplayer"' +
                     ' src="' +  utils.html(url) + '" width="' + width  + '" height="' + height  + '"'  + (align ? ' style="float:' + align + '"': '') +
                     ' wmode="transparent" play="true" loop="false" menu="false" allowscriptaccess="never" allowfullscreen="true" >';
                 break;

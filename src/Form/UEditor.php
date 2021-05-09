@@ -25,7 +25,7 @@ class UEditor extends Field
         'maximumWords'       => 100000,
         'serverUrl'          => '',
     ];
-    
+
     protected $view = 'ueditor::ueditor';
 
     /**
